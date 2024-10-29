@@ -1,0 +1,135 @@
+.user-board {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #f9fafb;
+    min-height: 100vh;
+}
+
+.column {
+    width: 20rem;
+}
+
+.column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.user-avatar-container {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.user-name {
+    color: #111827;
+    font-weight: bold;
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+}
+
+.user-task-count {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+}
+
+.column-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.column-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.user-task-list {
+    margin-top: 1rem;
+}
+
+.task-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    margin-bottom: 1rem;
+}
+
+.task-id {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.task-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.status-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.task-title {
+    font-weight: 500;
+    color: #111827;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.tag-container {
+    display: flex;
+    align-items: center;
+}
+
+.priority-circle {
+    display: flex;
+    align-items: center;
+    margin-right: 0.25rem;
+}
+
+.priority-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.closed-circle-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    gap: 0.5rem;
+}
+
+.closed-circle {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.task-footer {
+    display: flex;
+    align-items: center;
+}
+
+.task-tag {
+    color: #cfd1d5;
+    font-size: 0.875rem;
+}

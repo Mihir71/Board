@@ -1,0 +1,134 @@
+.project-board {
+  display: flex;
+  gap: 1rem; /* Space between columns */
+  padding: 1.5rem; /* Padding for the main container */
+  background-color: #f9fafb; /* Light gray background */
+  min-height: 100vh; /* Full height of the screen */
+}
+
+.column {
+  width: 20rem; /* Width of each column */
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+.column-title {
+  font-weight: 800; /* Medium font weight */
+  color: #111827; /* Dark gray color */
+  margin-left: 0.5rem; /* Added space between icon and column title */
+}
+
+.column-count {
+  color: #6b7280; /* Gray color */
+  font-size: 0.875rem; /* Small font size */
+  margin-left: 0.5rem; /* Added space between column count */
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem; /* Space between buttons */
+}
+
+.button-container button {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+}
+
+.task-card {
+  background-color: white; /* White background for task cards */
+  padding: 1rem; /* Padding inside the card */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  border: 1px solid #e5e7eb; /* Light gray border */
+  margin-bottom: 1rem; /* Space below each card */
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 0.5rem; /* Space below the header */
+}
+
+.task-id {
+  color: #6b7280; /* Gray color */
+  font-size: 0.875rem; /* Small font size */
+  margin-bottom: 0.25rem; /* Space below ID */
+}
+
+.task-title {
+  font-weight: 500; /* Medium font weight */
+  color: #111827; /* Dark gray color */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit the task title to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis when content overflows */
+  white-space: normal;
+}
+
+.task-tag-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb; /* Light gray border around the circle and text */
+  border-radius: 0.25rem; /* Rounded corners */
+  padding: 0.25rem; /* Padding around the circle and text */
+  gap: 0.25rem; /* Space between icon and text */
+}
+
+.task-tag {
+  color: #6b7280; /* Gray color */
+  font-size: 0.875rem; /* Small font size */
+  display: flex;
+  align-items: center;
+  gap: 0.25rem; /* Space between elements */
+}
+
+.avatar {
+  width: 1.5rem; /* Width for the avatar */
+  height: 1.5rem; /* Height for the avatar */
+  border-radius: 50%; /* Circular avatar */
+}
+
+.priority-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between tag and priority */
+}
+
+.priority-icon {
+  width: 1.25rem; /* Size of the priority icon */
+  height: 1.25rem; /* Size of the priority icon */
+  padding: 0.25rem; /* Padding inside the border */
+  border: 1px solid #e5e7eb; /* Light gray border around the icon */
+  border-radius: 0.25rem; /* Rounded corners */
+}
+
+.user-avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.availability-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px; /* Adjust size */
+  height: 8px; /* Adjust size */
+  border-radius: 50%; /* Make it circular */
+}
+
+.available {
+  background-color: green; /* Green for available */
+}
+
+.not-available {
+  background-color: gray; /* Gray for not available */
+}
